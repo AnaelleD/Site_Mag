@@ -1,6 +1,6 @@
-create database tianarasonBD;
+#create database tianarasonBD;
 
-create table images (
+create table Image (
     id SERIAL PRIMARY KEY,
     nom varchar(100) NOT NULL,
     legende varchar(500),

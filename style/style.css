@@ -1,5 +1,5 @@
 body {
-    font: 400 15px Lato, sans-serif;
+    font: 400 15px Raleway, sans-serif;
     line-height: 1.8;
     color: #818181;
 }
@@ -9,6 +9,7 @@ h2 {
     color: #ffa86f;
     font-weight: 600;
     margin-bottom: 30px;
+    font-family: Indie Flower, sans-serif;
 }
 h4 {
     font-size: 19px;
@@ -16,12 +17,13 @@ h4 {
     color: #ffa86f;
     font-weight: 400;
     margin-bottom: 30px;
+    font-family: Indie Flower, sans-serif;
 }
 .jumbotron {
     background-color: #ffa86f;
     color: #fff;
     padding: 100px 25px;
-    font-family: Montserrat, sans-serif;
+    font-family: Raleway, sans-serif;
 }
 .container-fluid {
     padding: 60px 50px;
@@ -114,7 +116,7 @@ h4 {
     line-height: 1.42857143 !important;
     letter-spacing: 4px;
     border-radius: 0;
-    font-family: Montserrat, sans-serif;
+    font-family: Indie Flower, sans-serif;
 }
 .navbar li a, .navbar .navbar-brand {
     color: #fff !important;

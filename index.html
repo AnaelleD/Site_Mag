@@ -180,11 +180,11 @@
         <!-- Left and right controls -->
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
           <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
+          <span class="sr-only">Précédent</span>
         </a>
         <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
           <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
+          <span class="sr-only">Suivant</span>
         </a>
       </div>
     </div>
@@ -195,25 +195,32 @@
       <div class="row">
         <div class="col-sm-5">
           <p>Vous pouvez me contacter si vous avez des questions ou pour obtenir un devis :</p>
-          <p><span class="glyphicon glyphicon-map-marker"></span>Montpellier, France</p>
-          <p><span class="glyphicon glyphicon-envelope"></span>magali.tianarason@gmail.com</p>
+          <p><span class="glyphicon glyphicon-map-marker"></span> Montpellier, France</p>
+          <p><span class="glyphicon glyphicon-envelope"></span> magali.tianarason@gmail.com</p>
         </div>
+        <form method = "post" action ="script/contact.php">
         <div class="col-sm-7 slideanim">
           <div class="row">
             <div class="col-sm-6 form-group">
-              <input class="form-control" id="name" name="name" placeholder="Nom" type="text" required>
+              <input class="form-control" id="name" name="nom" placeholder="Nom" type="text" required>
             </div>
             <div class="col-sm-6 form-group">
               <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
             </div>
           </div>
-          <textarea class="form-control" id="comments" name="comments" placeholder="Commentaires" rows="5"></textarea><br>
+          <textarea class="form-control" id="comments" name="message" placeholder="Commentaires" rows="5"></textarea><br>
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="captcha" name="captcha" placeholder="Filtre anti-spam. Combien font 1 + 2 ?" type="text" required>
+            </div>
+          </div>
           <div class="row">
             <div class="col-sm-12 form-group">
-              <button class="btn btn-default pull-right" type="submit">Envoyer</button>
+              <button class="btn btn-default pull-right" type="submit" name = "envoi">Envoyer</button>
             </div>
           </div>
         </div>
+      </form>
       </div>
     </div>
 

@@ -4,13 +4,26 @@ $bdd = connexionbd();
 ?>
 
 <?php
-$requete = "SELECT image FROM Image WHERE categorie = 'creativite'";
+echo '<table width = "100%" border = "1">';
+	echo '<tr>';
+    echo'<th>nom</th>';
+		echo'<th>legende</th>';
+    echo'<th>categorie</th>';
+    echo'<th>photo</th>';
+  echo '</tr>';
+
+$requete = "select nom,legende, categorie, photo from image where categorie = 'creativite'";
 $resultat = requete($bdd, $requete);
-  echo '<table>';
-  foreach($resultat as $ligne) {
-    echo '<tr>';
-    echo ('<td> <img src ="'.$ligne['image'].'"width=150" "height=150"/></td>');
-    echo '<tr>';
-  }
-  echo'</table>';
+
+foreach($resultat as $ligne) {
+	echo '<tr>';
+  echo ('<td style=text-align:center;>'.$ligne['nom']. '</td>');
+	echo ('<td style=text-align:center;>'.$ligne['legende']. '</td>');
+  echo ('<td style=text-align:center;>'.$ligne['categorie']. '</td>');
+  echo ('<td style=text-align:center;> <img src ="'.$ligne['photo'].'"width=150" "height=150"/></td>');
+  echo '</tr>'	;
+	}
+
+echo ('</table>');
+
 ?>

@@ -10,8 +10,8 @@
 
 create table image (
      id SERIAL PRIMARY KEY,
-     nom varchar(100) not null,
-     legende varchar(500),
+     nom varchar(50) not null,
+     legende varchar(200),
      categorie varchar(20),
      photo VARCHAR(200)
 );

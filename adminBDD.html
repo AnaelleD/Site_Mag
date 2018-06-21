@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Magali Salètes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="script/leaflet.js"></script>
+    <script src="script/jquery.min.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/leaflet.css" />
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/google_indie_flower.css">
+    <link rel="stylesheet" href="style/google_raleway.css">
+  </head>
+
+  <body>
+
+    <form  style = "margin-left:20px;" id="ajoutImage"  method="POST" action = "WebService/ajoutImageWS.php" enctype='multipart/form-data' onsubmit="">
+		<p>
+			<legend class="scheduler-border"> Formulaire d'importation d'images dans la BDD </legend>
+			<div class="control-group">
+				<div class="controls bootstrap-timepicker">
+          <label>Nom de l'image</label>
+          <input style = "height:32px;" type = "text" id = "nomImage" name = "nomImage" size = "50"/>
+          </br>
+          </br>
+          <label>Catégorie de l'image</label>
+            <select id = "categorie" name = "categorie">
+              <option selected value = "identification">identification</option>
+              <option value = "information">information</option>
+              <option value = "publicite">publicité</option>
+              <option value = "creativite">créativité</option>
+            </select>
+          </br>
+          </br>
+          <label>Légende de l'image</label>
+          </br>
+            <textarea id="legende" name="legende" rows = "4" cols = "50"></textarea>
+          </br>
+          </br>
+          <div class ="row">
+            <div class = "col-sm-1">
+              <label>Image</label>
+            </div>
+            <div class = "col-sm-3">
+              <input type = "file" id = "image" name = "image" size ="200" accept="image/*">
+            </div>
+          </div>
+          </br>
+            <input type="submit" name="nom" value="Envoyer">
+        </div>
+      </div>
+    </form>
+  </body>
+  </html>

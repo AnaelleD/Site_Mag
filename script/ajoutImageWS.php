@@ -29,6 +29,6 @@ if(!empty($_REQUEST['nomImage'] && $_REQUEST['legende'] && $_REQUEST['categorie'
 	));
 }
 
-header('Refresh: 0; URL=../adminBDD.php');
+header('Refresh: 1; URL=../adminBDD.html');
 
 ?>

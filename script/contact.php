@@ -47,4 +47,6 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
     echo '</div>';
   }
 }
+
+header('Refresh: 2; URL=../index.html'); // fonction pour revenir à l'index.html au bout de 2 secondes
 ?>

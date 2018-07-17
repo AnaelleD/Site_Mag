@@ -4,7 +4,7 @@
 function connexionbd() {
     require 'login.php';
 	// chaîne de connexion pour PDO
-	$dsn = "pgsql:host=$host;dbname=$dbname";
+  $dsn = "pgsql:host=$host;port=$port;dbname=$dbname";
 	// connexion au serveur de bases de données
 	$bd = new PDO($dsn, $username, $password);
 	return $bd;

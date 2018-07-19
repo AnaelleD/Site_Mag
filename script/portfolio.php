@@ -15,6 +15,6 @@ foreach($resultat as $ligne) {
 ####### Mise en forme HTML final
 $vue = file_get_contents("../portfolio.html");
 $vue = str_replace("{lesImages}", $img, $vue);
-$vue = str_replace("{leTitre}", '<h3 style="color:#ffa86f;text-transform: uppercase">PORTFOLIO '.$creation.'</h3>', $vue);
+$vue = str_replace("{leTitre}", '<h3 style="color:black;text-transform: uppercase">PORTFOLIO '.$creation.'</h3>', $vue);
 echo $vue ;
 ?>

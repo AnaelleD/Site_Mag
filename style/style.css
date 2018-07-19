@@ -6,7 +6,8 @@ body {
 h2 {
     font-size: 24px;
     text-transform: uppercase;
-    color: #ffa86f;
+    /*color: #ffa86f;*/
+    color : black;
     font-weight: 600;
     margin-bottom: 30px;
     font-family: Indie Flower, sans-serif;
@@ -14,14 +15,20 @@ h2 {
 h4 {
     font-size: 19px;
     line-height: 1.375em;
-    color: #ffa86f;
+    /*color: #ffa86f;*/
     font-weight: 400;
     margin-bottom: 30px;
     font-family: Indie Flower, sans-serif;
 }
+
+#about {
+  background-color: #f6f6f6;
+}
 .jumbotron {
-    background-color: #ffa86f;
-    color: #fff;
+    /*background-color: #ffa86f;*/
+    background-color: #fff;
+    /*color: #fff;*/
+    color : black;
     padding: 100px 25px;
     font-family: Raleway, sans-serif;
 }
@@ -32,7 +39,8 @@ h4 {
     background-color: #f6f6f6;
 }
 .logo-small {
-    color: #ffa86f;
+    /*color: #ffa86f;*/
+    color : black;
     font-size: 50px;
 }
 .logo {
@@ -51,13 +59,16 @@ h4 {
 }
 .carousel-control.right, .carousel-control.left {
     background-image: none;
-    color: #ffa86f;
+    /*color: #ffa86f;*/
+    color : black;
 }
 .carousel-indicators li {
-    border-color: #ffa86f;
+    /*border-color: #ffa86f;*/
+    border-color: black;
 }
 .carousel-indicators li.active {
-    background-color: #ffa86f;
+    /*background-color: #ffa86f;*/
+    background-color: black;
 }
 .item h4 {
     font-size: 19px;
@@ -109,7 +120,8 @@ h4 {
 }
 .navbar {
     margin-bottom: 0;
-    background-color: #ffa86f;
+    /*background-color: #ffa86f; #818181*/
+    background-color: #f6f6f6;
     z-index: 9999;
     border: 0;
     font-size: 12px !important;
@@ -117,12 +129,15 @@ h4 {
     letter-spacing: 4px;
     border-radius: 0;
     font-family: Indie Flower, sans-serif;
+    border: 1px solid;
 }
 .navbar li a, .navbar .navbar-brand {
-    color: #fff !important;
+    /*color: #fff !important;*/
+    color: black !important;
 }
 .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #ffa86f !important;
+    /*color: #ffa86f !important;*/
+    color: black !important;
     background-color: #fff !important;
 }
 .navbar-default .navbar-toggle {
@@ -133,6 +148,7 @@ footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
     color: #ffa86f;
+    color: black;
 }
 .slideanim {visibility:hidden;}
 .slide {

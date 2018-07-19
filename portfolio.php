@@ -1,5 +1,5 @@
 <?php
-include '../bdd/bdd.php';
+include 'bdd/bdd.php';
 
 $creation = $_GET['creation'];
 $escaped = pg_escape_string($creation);
@@ -13,7 +13,7 @@ foreach($resultat as $ligne) {
 }
 
 ####### Mise en forme HTML final
-$vue = file_get_contents("../portfolio.html");
+$vue = file_get_contents("portfolio.html");
 $vue = str_replace("{lesImages}", $img, $vue);
 $vue = str_replace("{leTitre}", '<h3 style="color:black;text-transform: uppercase">PORTFOLIO '.$creation.'</h3>', $vue);
 echo $vue ;

@@ -10,36 +10,22 @@
     <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="style/leaflet.css" />
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/google_indie_flower.css">
-    <link rel="stylesheet" href="style/google_raleway.css">
+    <!--insertion header et footer-->
+    <script>
+      $(function(){
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
   </head>
 
-  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#myPage">Magali S.</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about">QUI-SUIS-JE?</a></li>
-            <li><a href="#services">SERVICES</a></li>
-            <li><a href="#portfolio">PORTFOLIO</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div id="header"></div>
 
     <div class="jumbotron text-center">
       <h1>Magali Salètes - Tianarason</h1>
-      <p>Graphiste franco-malgache</p>
+      <h3>Graphiste franco-malgache</h3>
       <img src="image/designer_montpellier_frise.jpg" alt="Designer Montpellier Tianarason" width="1000px" height="100%">
     </div>
 
@@ -67,22 +53,22 @@
     <!-- Container (Services Section) -->
     <div id="services" class="container-fluid text-center">
       <h2>SERVICES</h2>
-      <h4>Ce que je vous apporte</h4>
+      <h3>Ce que je vous apporte</h3>
       <br>
       <div class="row slideanim">
         <div class="col-sm-4">
           <span class="glyphicon glyphicon-star-empty logo-small"></span>
-          <h4><strong>CREATIVITE</strong></h4>
+          <h3>CREATIVITE</h3>
           <p>Parceque l'imagination est au coeur de mon métier</p>
         </div>
         <div class="col-sm-4">
           <span class="glyphicon glyphicon-heart logo-small"></span>
-          <h4><strong>PASSION</strong></h4>
+          <h3>PASSION</h3>
           <p>Car ce métier est aussi ma plus grande passion</p>
         </div>
         <div class="col-sm-4">
           <span class="glyphicon glyphicon-pencil logo-small"></span>
-          <h4><strong>SIMPLICITE</strong></h4>
+          <h3>SIMPLICITE</h3>
           <p>Parfois les choses les plus simples sont aussi les plus belles</p>
         </div>
       </div>
@@ -90,17 +76,17 @@
       <div class="row slideanim">
         <div class="col-sm-4">
           <span class="glyphicon glyphicon-comment logo-small"></span>
-          <h4><strong>COMMUNICATION</strong></h4>
+          <h3>COMMUNICATION<</h3>
           <p>Je suis à votre écoute pour vous proposer les solutions les plus adaptées à vos besoins</p>
         </div>
         <div class="col-sm-4">
           <span class="glyphicon glyphicon-calendar logo-small"></span>
-          <h4><strong>FLEXIBILITE</strong></h4>
+          <h3>FLEXIBILITE</h3>
           <p>Je vous propose un calendrier qui correspond à vos deadlines</p>
         </div>
         <div class="col-sm-4">
           <span class="glyphicon glyphicon-thumbs-up logo-small"></span>
-          <h4><strong>EFFICACITE</strong></h4>
+          <h3>EFFICACITE</h3>
           <p>Mon objectif est de vous proposer un projet qui répondra au mieux et rapidement à vos attentes</p>
         </div>
       </div>
@@ -108,41 +94,41 @@
 
     <!-- Container (Portfolio Section) -->
     <div id="portfolio" class="container-fluid text-center bg-grey">
-      <h2>Portfolio</h2><br>
-      <h4>Mes dernières créations</h4>
+      <h2>Portfolio</h2>
+      <h3>Mes dernières créations</h3>
       <div class="row text-center slideanim">
         <div class="col-sm-3">
-          <p><strong>Identification</strong></p>
+          <h3>Identification</h3>
           <p>Logos, étiquettes...</p>
           <p>
-            <a href = "script/portfolio.php?creation=identifier"/>
+            <a href = "portfolio.php?creation=identifier"/>
               <img src="image/identifier.jpg" alt="Volley goats" width="200px" height="100%">
             </a>
           </p>
         </div>
         <div class="col-sm-3">
-          <p><strong>Information</strong></p>
+          <h3>Information</h3>
           <p>Cartes, diagrammes...</p>
           <p>
-            <a href = "script/portfolio.php?creation=informer"/>
+            <a href = "portfolio.php?creation=informer"/>
               <img src="image/informer.jpg" alt="Informer" width="300px" height="100%">
             </a>
           </p>
         </div>
         <div class="col-sm-3">
-          <p><strong>Publicité</strong></p>
+          <h3>Publicité</h3>
           <p>Affiches, flyers...</p>
           <p>
-            <a href = "script/portfolio.php?creation=promouvoir"/>
+            <a href = "portfolio.php?creation=promouvoir"/>
               <img src="image/promouvoir.jpg" alt="Promouvoir" width="300px" height="100%">
             </a>
           </p>
         </div>
         <div class="col-sm-3">
-          <p><strong>Créativité</strong></p>
+          <h3>Créativité</h3>
           <p>Dessins, photographies...</p>
           <p>
-          <a href = "script/portfolio.php?creation=creativite"/>
+          <a href = "portfolio.php?creation=creativite"/>
             <img class = "creativite" src="image/divertir.jpg" alt="Divertir" width="400px" height="100%">
           </a>
           </p>
@@ -197,7 +183,7 @@
 
     <!-- Container (Contact Section) -->
     <div id="contact" class="container-fluid bg-grey" style="background-color : #fff;">
-      <h2 class="text-center">CONTACT</h2>
+      <h2 class="text-center">Contact</h2>
       <div class="row">
         <div class="col-sm-5">
           <p>Vous pouvez me contacter si vous avez des questions ou pour obtenir un devis :</p>
@@ -214,15 +200,15 @@
               <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
             </div>
           </div>
-          <textarea class="form-control" id="comments" name="message" placeholder="Commentaires" rows="5"></textarea><br>
+          <textarea class="form-control" id="comments" name="message" placeholder="Commentaires" rows="5" style="font-size : 24px;"></textarea><br>
           <div class="row">
             <div class="col-sm-6 form-group">
-              <input class="form-control" id="captcha" name="captcha" placeholder="Filtre anti-spam. Combien font 1 + 2 ?" type="text" required>
+              <input class="form-control" id="captcha" name="captcha" placeholder="Filtre anti-spam : 1 + 2 = ?" type="text" required>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-12 form-group">
-              <button class="btn btn-default pull-right" type="submit" name = "envoi">Envoyer</button>
+              <button class="btn btn-default pull-right" type="submit" name = "envoi" style="font-size : 24px;">Envoyer</button>
             </div>
           </div>
         </div>
@@ -233,14 +219,11 @@
     <!-- Add Google Maps -->
     <div id="map" style="height:400px;width:100%;"></div>
 
-    <footer class="container-fluid text-center" style = "background-color : #f6f6f6;">
+    <div class="jumbotron text-center">
       <img src="image/designer_montpellier_frise_bas.jpg" alt="Designer Montpellier Tianarason" width="800px" height="100%">
-      </br>
-      <a href="#myPage" title="To Top">
-        <span class="glyphicon glyphicon-chevron-up"></span>
-      </a>
-      <p style = "color : black;" >&copy; Magali Salètes - Tianarason, 2018. Tous droits réservés. <a href = "droits.html">Mentions légales & droits d'auteur.</a><p>
-    </footer>
+    </div>
+
+    <div id="footer"></div>
 
     <script src="script/map.js"></script>
     <script>

@@ -10,39 +10,25 @@
     <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="style/leaflet.css" />
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/google_indie_flower.css">
-    <link rel="stylesheet" href="style/google_raleway.css">
+    <!--insertion header et footer-->
+    <script>
+      $(function(){
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
   </head>
 
   <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">Magali S.</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html#about">QUI-SUIS-JE?</a></li>
-            <li><a href="index.html#services">SERVICES</a></li>
-            <li><a href="index.html#portfolio">PORTFOLIO</a></li>
-            <li><a href="index.html#contact">CONTACT</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div id="header"></div>
 
     <div class="jumbotron text-center">
       <h1>Magali Salètes - Tianarason</h1>
-      <p>Graphiste franco-malgache</p>
+      <h2>Graphiste franco-malgache</h2>
     </div>
 
-    <!-- Container (About Section) -->
+    <!-- Mentions légales -->
     <div id="mentions" class="container-fluid">
       <div class="row">
         <div class="col-sm-8">
@@ -111,13 +97,7 @@
       </div>
     </div>
 
-    <!-- Add Google Maps -->
-    <footer class="container-fluid text-center">
-      <a href="#myPage" title="To Top">
-        <span class="glyphicon glyphicon-chevron-up"></span>
-      </a>
-      <p>&copy; 2018 Magali Tianarason. Images soumises à droits d'auteur. <a href = " ">Lien vers les mentions légales.</a><p>
-    </footer>
+    <div id="footer"></div>
 
     <script>
       $(document).ready(function () {

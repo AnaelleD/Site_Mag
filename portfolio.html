@@ -89,7 +89,6 @@
 
     /* charger thumbnails dans le carousel */
     $('.jumbotron .row .thumbnail').on('load',function(){}).each(function(i){
-      if(this.complete){
         var item = $('<div class="item"></div>');
         var itemDiv = $(this).parents('div');
         var title = $(this).parent('a').attr("title");
@@ -100,7 +99,6 @@
         if(i==0){
           item.addClass('active');
         }
-      }
     });
 
     /* Activer le carousel */

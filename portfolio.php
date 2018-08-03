@@ -9,7 +9,7 @@ $resultat = requete($bdd, $requete);
 
 $img = '';
 foreach($resultat as $ligne) {
-	$img = $img.'<div class = "col-lg-2 col-sm-4 col-xs-6"><a title="'.$ligne['legende'].'" href="#" "><img class="thumbnail img-responsive center-block"" src ="'.$ligne['photo'].'" ></a></div>';
+	$img = $img.'<div class = "col-lg-2 col-sm-4 col-xs-6"><a title="'.$ligne['legende'].'" href="#" "><img class="thumbnail img-responsive center-block" src="watermark.php?image='.$ligne['photo'].'"/></a></div>';
 }
 
 ####### Mise en forme HTML final

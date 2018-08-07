@@ -32,8 +32,10 @@ h3 {
 }
 
 #about {
-  background-color: #f6f6f6;
+  /*background-color: #f6f6f6;*/
+	background-color: #E6E6E6;
 }
+
 .jumbotron {
     /*background-color: #ffa86f;*/
     background-color: #fff;
@@ -46,7 +48,8 @@ h3 {
     padding: 60px 50px;
 }
 .bg-grey {
-    background-color: #f6f6f6;
+    /*background-color: #f6f6f6;*/
+		background-color: #fff;
 }
 .logo-small {
     /*color: #ffa86f;*/
@@ -144,7 +147,8 @@ input[type="email"]
 .navbar {
     margin-bottom: 0;
     /*background-color: #ffa86f; #818181*/
-    background-color: #f6f6f6;
+    /*background-color: #f6f6f6;*/
+		background-color: #e6e6e6;
     z-index: 9999;
     border: 0;
     font-size: 12px !important;

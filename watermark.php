@@ -1,6 +1,6 @@
 <?php
 	// Charge le cachet et la photo afin d'y appliquer le tatouage numérique
-	$watermark = imagecreatefrompng('image/watermark.png');
+	$watermark = imagecreatefrompng('image/tianarason.png');
 	$im = imagecreatefromjpeg($_GET['image']);
 
 	// Définit les marges pour le cachet et récupère la hauteur et la largeur de celui-ci

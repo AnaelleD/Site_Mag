@@ -24,24 +24,31 @@
     <div id="header"></div>
 
     <!--<div class="jumbotron text-center"> -->
-    <header class="page-header">
+    <header class="page-header" style="border:none;">
       <div class = "row" style = "text-align:center;">
         <div class = ".col-xs-8 .col-offset-2 .col-sm-8 .col-offset-2 .col-lg-8 .col-offset-2">
     <!--   <hr style="height:2px; background-color: #DF0101; width: 50%; border: none;"/> barre de separation rouge -->
           <img src="image/barque_hautPage.jpg" alt="Designer Montpellier Tianarason" width="60%" height="60%">
         </div>
+      <div class = ".col-xs-8 .col-offset-2 .col-sm-8 .col-offset-2 .col-lg-8 .col-offset-2">
+        <img class = "service" src="image/MesServices.jpg" alt = "MesServices" width="600px" height="100%">
       </div>
-    <hr style="height: 2px; color: #DF0101; background-color: #DF0101; width: 50%; border: none;"/> <!-- barre de separation rouge -->
+      </div>
+    <!--<hr style="height: 2px; color: #DF0101; background-color: #DF0101; width: 50%; border: none;"/> --><!-- barre de separation rouge -->
     </header>
 
+
     <!-- Container (Services Section) -->
-    <div id="services" class="container-fluid text-center" style = "background-color:#E6E6E6;">
+    <!--
+    <div id="services" class="container-fluid text-center">
       <div class = "row" style = "text-align:center;">
         <div class = ".col-xs-8 .col-offset-2 .col-sm-8 .col-offset-2 .col-lg-8 .col-offset-2">
           <img class = "service" src="image/MesServices.jpg" alt = "MesServices" width="600px" height="100%">
         </div>
       </div>
     </div>
+    -->
+
       <!--<h2>SERVICES</h2>
       <h3>Ce que je vous apporte</h3>
       <br>
@@ -83,11 +90,11 @@
     </div>-->
     <hr style="height: 2px; color: #DF0101; background-color: #DF0101; width: 50%; border: none;"/>
     <!-- Container (Portfolio Section) -->
-    <div id="portfolio" class="container-fluid text-center bg-grey">
+    <div id="portfolio" class="container-fluid text-center">
       <h2>Portfolio</h2>
-      <h3>Mes dernières créations</h3>
+      <h3>Voir mes dernières créations</h3>
       <div class="row text-center slideanim">
-        <div class="col-sm-3">
+        <div class="col-sm-6">
           <!--<h3>Communication</h3>-->
           <!--<p>Logos, étiquettes...</p>-->
           <p>
@@ -96,7 +103,7 @@
             </a>
           </p>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-6">
           <!--<h3>Passion</h3>-->
           <!--<p>Cartes, diagrammes...</p>-->
           <p>
@@ -105,7 +112,7 @@
             </a>
           </p>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-6">
           <!--<h3>Personnalisation</h3>-->
           <!--<p>Affiches, flyers...</p>-->
           <p>
@@ -114,7 +121,7 @@
             </a>
           </p>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-6">
           <!--<h3>Portfolio</h3>
           <p>Dessins, photographies...</p>-->
           <p>
@@ -124,13 +131,14 @@
           </p>
         </div>
       </div>
+      </div>
+
 <hr style="height: 2px; color: #DF0101; background-color: #DF0101; width: 50%; border: none;">
-      <br>
       <div class="row container-fluid text-center">
         <div class = "col-sm-12">
           <img src = "image/CarnetDeClientele.jpg" alt="CarnetDeClientele" width="600px" height="100%"/>
         </div>
-      </div>
+
       <!--<h2>Ils m'ont fait confiance</h2>-->
       <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
         <!-- Indicators -->
@@ -175,53 +183,56 @@
 
         <!-- Left and right controls -->
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"style = "color : #DF0101;"></span>
           <span class="sr-only">Précédent</span>
         </a>
         <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" style = "color : #DF0101;"></span>
           <span class="sr-only">Suivant</span>
         </a>
       </div>
     </div>
+
 <hr style="height: 2px; color: #DF0101; background-color: #DF0101; width: 50%; border:none;">
+
     <!-- Container (About Section) -->
-    <div id="about" class="container-fluid">
+    <div id="about" class="container-fluid" style = "background-color : white;">
       <div class="row">
-        <div class="col-sm-10">
+        <div class="col-sm-12">
             <img src="image/QuiSuisJe.jpg" alt = "QuiSuisJe" width = "600px" height="100%">
+        </div>
+        </div>
+      </br>
+        <div class = "row">
           <!--<h2>Qui suis-je ?</h2><br>-->
-          <div align="justify">
+          <div class="col-lg-6 col-lg-offset-1" align="justify">
           <p>Je suis une graphiste franco-malgache fan d'animation et de cinéma.</br>
           Dans la vie, ma première vraie passion c'est manger du cake à la banane tout en regardant un bon Disney.</br>
           Je fais aussi beaucoup de badminton et j'adore compter les scores en allemand, ma seconde grande passion.
           D'ailleurs on me surnomme souvent "Patator", et c'est pas parce que j'aime les patates! </br>
           J'aime également bricoler. La dernière fois j'ai réussi à faire une étagère de coin pour ranger mes millions de DVDs car oui, j'ai une immense collection de disney, pixar etc...</br>
           </p>
-          <a href="image/CV.jpg">Mon CV </a>
+          <a href="image/CV.jpg" style="font-size:20px;">Voir mon CV </a>
+          </div>
+          <div class="col-lg-5" >
+            <img src = "image/magali.jpg" alt = "tianarason" width = "250px" height= "100%"
+            style = "border-radius:50%; -moz-border-radius:50px; -webkit-border-radius:50px;">
           </div>
         </div>
-
-        <div class="col-sm-2" style = "text-align:center;">
-          <!--<span class="glyphicon glyphicon-signal logo"></span>-->
-          <img src = "image/magali.jpg" alt = "tianarason" width = "250px" height= "100%"
-          style = "border-radius:50%; -moz-border-radius:50px; -webkit-border-radius:50px;">
-        </div>
       </div>
-    </div>
+
     <hr style="height: 2px; color: #DF0101; background-color: #DF0101; width: 50%; border: none;"/>
+
     <!-- Container (Contact Section) -->
     <div id="contact" class="container-fluid bg-grey" style="background-color : #fff;">
       <h2 class="text-center">Contact</h2>
       <div class="row">
-        <div class="col-sm-5">
-          <p>Vous pouvez me contacter si vous avez des questions ou pour obtenir un devis :</p>
-          <!--<p><span class="glyphicon glyphicon-map-marker"></span> Montpellier, France</p>
-          <p><span class="glyphicon glyphicon-envelope"></span> magali.tianarason@gmail.com</p>-->
-          <img src = "image/Contact.jpg" alt="contact" width="800px" height="100%"/>
+        <p>Vous pouvez me contacter si vous avez des questions ou pour obtenir un devis :</p>
+        <div class="col-sm-6">
+          <img src = "image/Contact.jpg" alt="contact" width="700px" height="100%"/>
         </div>
         <form method = "post" action ="script/contact.php">
-        <div class="col-sm-7 slideanim">
+        <div class="col-sm-6 slideanim">
           <div class="row">
             <div class="col-sm-6 form-group">
               <input class="form-control" id="name" name="nom" placeholder="Nom" type="text" required>
@@ -230,7 +241,7 @@
               <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
             </div>
           </div>
-          <textarea class="form-control" id="comments" name="message" placeholder="Commentaires" rows="5" style="font-size : 24px;"></textarea><br>
+          <textarea class="form-control" id="comments" name="message" placeholder="Commentaires" rows="5" ></textarea><br>
           <div class="row">
             <div class="col-sm-6 form-group">
               <input class="form-control" id="captcha" name="captcha" placeholder="Filtre anti-spam : 1 + 2 = ?" type="text" required>
@@ -238,22 +249,28 @@
           </div>
           <div class="row">
             <div class="col-sm-12 form-group">
-              <button class="btn btn-default pull-right" type="submit" name = "envoi" style="font-size : 24px;">Envoyer</button>
+              <button class="btn btn-default pull-right" type="submit" name = "envoi" >Envoyer</button>
             </div>
           </div>
         </div>
       </form>
       </div>
     </div>
-    <hr style="height: 2px; color: #DF0101; background-color: #DF0101; width: 50%; border: none;"/>
+
+
 
     <!-- Add Google Maps -->
+    <!--
     <div id="map" style="height:400px;width:100%;"></div>
+    -->
     <hr style="height: 2px; color: #DF0101; background-color: #DF0101; width: 50%; border: none;"/>
+
     <div class="jumbotron text-center">
-      <img src="image/tandem_BasPage.jpg" alt="Designer Montpellier Tianarason" width="1000px" height="100%">
+      <img src="image/tandem_BasPage.jpg" alt="Designer Montpellier Tianarason" width="800px" height="100%">
     </div>
-    <hr style="height: 2px; color: #DF0101; background-color: #DF0101; width: 50%; border: none;"/>
+
+
+
     <div id="footer"></div>
 
     <script src="script/map.js"></script>

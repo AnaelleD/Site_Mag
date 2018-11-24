@@ -36,9 +36,9 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
     $headers = 'MIME-Version: 1.0'."\r\n";
     $headers .= 'Content-type: text/html; charset=iso-8859-1'."\r\n";
 
-    @mail($destinataire, $sujet, $contenu, $headers); // Fonction principale qui envoi l'email
+    mail($destinataire, $sujet, $contenu, $headers); // Fonction principale qui envoi l'email
 
-    echo '<h2>Message envoyé!</h2>'; // Afficher un message pour indiquer que le message a été envoyé
+    echo '<h2>Merci, votre message a bien été envoyé!</h2>'; // Afficher un message pour indiquer que le message a été envoyé
   } else { // S'il y a un moins une erreur
     echo '<div style="border:1px solid #ff0000; padding:5px;">';
     echo '<p style="color:#ff0000;">Désolé, il y a eu '.$nombreErreur.' erreur(s). Voici le détail des erreurs:</p>';

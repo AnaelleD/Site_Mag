@@ -24,18 +24,23 @@
     <div id="header"></div>
 
     <!--<div class="jumbotron text-center"> -->
-    <header class="page-header">
+    <header class="page-header" style="border:none;">
       <div class = "row" style = "text-align:center;">
         <div class = ".col-xs-8 .col-offset-2 .col-sm-8 .col-offset-2 .col-lg-8 .col-offset-2">
     <!--   <hr style="height:2px; background-color: #DF0101; width: 50%; border: none;"/> barre de separation rouge -->
           <img src="image/barque_hautPage.jpg" alt="Designer Montpellier Tianarason" width="60%" height="60%">
         </div>
+      <div class = ".col-xs-8 .col-offset-2 .col-sm-8 .col-offset-2 .col-lg-8 .col-offset-2">
+        <img class = "service" src="image/MesServices.jpg" alt = "MesServices" width="600px" height="100%">
       </div>
-    <hr style="height: 2px; color: #DF0101; background-color: #DF0101; width: 50%; border: none;"/> <!-- barre de separation rouge -->
+      </div>
+    <!--<hr style="height: 2px; color: #DF0101; background-color: #DF0101; width: 50%; border: none;"/> --><!-- barre de separation rouge -->
     </header>
 
+
     <!-- Container (Services Section) -->
-    <div id="services" class="container-fluid text-center" style = "background-color:#E6E6E6;">
+    <!--
+    <div id="services" class="container-fluid text-center">
       <div class = "row" style = "text-align:center;">
         <div class = ".col-xs-10 .col-sm-10 .col-lg-6 .col-offset-2">
           <img class = "service" src="image/MesServices.jpg" alt = "MesServices" width="60%" height="60%">
@@ -46,9 +51,9 @@
     <hr style="height: 2px; color: #DF0101; background-color: #DF0101; width: 50%; border: none;"/>
 
     <!-- Container (Portfolio Section) -->
-    <div id="portfolio" class="container-fluid text-center bg-grey">
+    <div id="portfolio" class="container-fluid text-center">
       <h2>Portfolio</h2>
-      <h3>Mes dernières créations</h3>
+      <h3>Voir mes dernières créations</h3>
       <div class="row text-center slideanim">
       <div class = "col-xs-6 col-sm-6 col-lg-6">
           <p>
@@ -87,7 +92,7 @@
            <div class = ".col-xs-10 .col-sm-10 .col-lg-8 .col-offset-2">
           <img src = "image/CarnetDeClientele.jpg" alt="CarnetDeClientele" width="60%" height="60%"/>
         </div>
-      </div>
+
       <!--<h2>Ils m'ont fait confiance</h2>-->
       <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
         <!-- Indicators -->
@@ -132,16 +137,18 @@
 
         <!-- Left and right controls -->
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"style = "color : #DF0101;"></span>
           <span class="sr-only">Précédent</span>
         </a>
         <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" style = "color : #DF0101;"></span>
           <span class="sr-only">Suivant</span>
         </a>
       </div>
     </div>
+
 <hr style="height: 2px; color: #DF0101; background-color: #DF0101; width: 50%; border:none;">
+
     <!-- Container (About Section) -->
     <div id="about" class="container-fluid">
       <div class="row" style = "text-align:center;">
@@ -168,6 +175,7 @@
     </div>
 
     <hr style="height: 2px; color: #DF0101; background-color: #DF0101; width: 50%; border: none;"/>
+
     <!-- Container (Contact Section) -->
     <div id="contact" class="container-fluid bg-grey" style="background-color : #fff;">
       <h2 class="text-center">Contact</h2>
@@ -190,7 +198,7 @@
               <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
             </div>
           </div>
-          <textarea class="form-control" id="comments" name="message" placeholder="Commentaires" rows="5" style="font-size : 24px;"></textarea><br>
+          <textarea class="form-control" id="comments" name="message" placeholder="Commentaires" rows="5" ></textarea><br>
           <div class="row">
             <div class="col-xs-6 col-sm-6 col-lg-6 form-group">
               <input class="form-control" id="captcha" name="captcha" placeholder="Filtre anti-spam : 1 + 2 = ?" type="text" required>
@@ -204,9 +212,11 @@
       </form>
       </div>
     </div>
-    <hr style="height: 2px; color: #DF0101; background-color: #DF0101; width: 50%; border: none;"/>
+
+
 
     <!-- Add Google Maps -->
+    <!--
     <div id="map" style="height:400px;width:100%;"></div>
 
     <hr style="height: 2px; color: #DF0101; background-color: #DF0101; width: 50%; border: none;"/>

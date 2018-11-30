@@ -8,8 +8,13 @@ create table image (
      photo VARCHAR(200)
 );
 
-<--!insert into Image(nom,legende,categorie,photo)-->
-  <!--values('bad girl', 'Affiche bad Alès', 'publicite', 'image/bad_girl.jpg');-->
+create table CompteAdmin (
+    id SERIAL PRIMARY KEY,
+    pseudo varchar(30) UNIQUE,
+    MDP varchar(20),
+    role varchar(5),
+    CONSTRAINT admin_user CHECK (role='admin')
+);
 
 # communication
 insert into Image(nom,legende,categorie,photo)
@@ -59,7 +64,6 @@ insert into Image(nom,legende,categorie,photo)
 insert into Image(nom,legende,categorie,photo)
     values('tournoi SGSC', 'Affiche tournoi SGSC', 'personnalisation', 'image/personnalisation/tournoi_SGSC.jpg');
 
-
 # portfolio
 insert into Image(nom,legende,categorie,photo)
     values('cimetiere_sans_pesticide', 'Affiche cimetière sans pesticide',
@@ -68,3 +72,8 @@ insert into Image(nom,legende,categorie,photo)
 insert into Image(nom,legende,categorie,photo)
     values('chien', 'Un petit chien',
       'portfolio', 'image/chien.jpg');
+
+#compteAdmin
+
+insert into compteAdmin (pseudo,MDP,role)
+    values ('tianarason','doudoutiti','admin')

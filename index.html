@@ -4,11 +4,9 @@
     <title>Magali Salètes</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="script/leaflet.js"></script>
     <script src="script/jquery.min.js"></script>
     <script src="script/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style/bootstrap.min.css">
-    <link rel="stylesheet" href="style/leaflet.css" />
     <link rel="stylesheet" href="style/style.css">
     <!--insertion header et footer-->
     <script>
@@ -56,7 +54,7 @@
       <h2>Portfolio</h2>
       <h3>Voir mes dernières créations</h3>
       <div class="row text-center slideanim">
-      <div class = "col-xs-6 col-sm-6 col-lg-6">
+      <div class = "col-xs-6 col-sm-6 col-lg-6" id="comm">
           <p>
             <a href = "portfolio.php?creation=communication"/>
               <img src="image/categorie/communication.jpg" alt="communication" width="100%" height="100%">
@@ -182,15 +180,11 @@
       <h2 class="text-center">Contact</h2>
       <div class="row" style = "text-align:center;">
           <div class = ".col-xs-10 .col-sm-10 .col-lg-8 .col-offset-2">
-        <!--<div class="col-sm-5">-->
           <p>Vous pouvez me contacter si vous avez des questions ou pour obtenir un devis :</p>
-          <!--<p><span class="glyphicon glyphicon-map-marker"></span> Montpellier, France</p>
-          <p><span class="glyphicon glyphicon-envelope"></span> magali.tianarason@gmail.com</p>-->
           <img src = "image/Contact.jpg" alt="contact" width="60%" height="60%"/>
         </div>
       </div>
         <form method = "post" action ="script/contact.php">
-        <!--<div class="col-sm-7 slideanim">-->
           <div class="row">
             <div class="col-xs-6 col-sm-6 col-lg-6 form-group">
               <input class="form-control" id="name" name="nom" placeholder="Nom" type="text" required>
@@ -201,10 +195,6 @@
           </div>
           <textarea class="form-control" id="comments" name="message" placeholder="Commentaires" rows="5" ></textarea><br>
           <div class="row">
-            <div class="col-xs-6 col-sm-6 col-lg-6 form-group">
-              <input class="form-control" id="captcha" name="captcha" placeholder="Filtre anti-spam : 1 + 2 = ?" type="text" required>
-            </div>
-          <!--<div class="row">-->
             <div class="col-xs-6 col-sm-6 col-lg-6 form-group">
               <button class="btn btn-default pull-right" type="submit" name = "envoi" style="font-size :20px;">Envoyer</button>
             </div>

@@ -4,7 +4,7 @@ include 'bdd/bdd.php';
 $creation = $_GET['creation'];
 $escaped = pg_escape_string($creation);
 $bdd = connexionbd();
-$requete = "select nom,legende, categorie, photo from image where categorie = '{$escaped}'";
+$requete = "select nom,legende, categorie, subcategorie, photo from image where categorie = '{$escaped}'";
 $resultat = requete($bdd, $requete);
 
 $img = '';
@@ -15,6 +15,6 @@ foreach($resultat as $ligne) {
 ####### Mise en forme HTML final
 $vue = file_get_contents("portfolio.html");
 $vue = str_replace("{lesImages}", $img, $vue);
-$vue = str_replace("{leTitre}", '<h3 style="color:black;text-transform: uppercase">PORTFOLIO '.$creation.'</h3>', $vue);
+$vue = str_replace("{leTitre}", '<h3 style="color:black;text-transform: uppercase">'.$creation.'</h3>', $vue);
 echo $vue ;
 ?>

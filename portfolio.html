@@ -36,6 +36,18 @@
    <div class="jumbotron text-center" style="background-color:white;">
    	<div class = "row">
    		<B> {leTitre} </B>
+      <select name="Sous catégorie" id=subCategorie>
+            <option>-- Choisissez une rubrique ---</option>
+            <option value="1">Logo</option>
+            <option value="2">Flyer</option>
+            <option value="3">Affiche</option>
+            <option value="4">Plaquette</option>
+            <option value="5">Faire-part</option>
+            <option value="6">Carte postale</option>
+            <option value="7">Storyboard</option>
+            <option value="8">Illustration</option>
+          </select>
+
    		<div class = "row">
         <B>{lesImages}</B>
       </div>
@@ -116,6 +128,12 @@
       $('#myModal').modal('show'); // Show the modal
       $('#modalCarousel').carousel(id); // Slide carousel to selected
     });
+
+    /* fonction actualistation liste deroulante */
+    if ($creation=="communication"){
+    	$(#subCategorie).val(2); //Sélectionne l'option qui a comme valeur 2 pour la liste déroulante.
+    }
+
     </script>
   </body>
 </html>
